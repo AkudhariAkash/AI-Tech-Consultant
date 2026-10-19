@@ -7,6 +7,8 @@ services:
     startCommand: uvicorn task1_knowledge_brain.app:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
       - key: FRONTEND_URL
         sync: false
 
@@ -18,6 +20,8 @@ services:
     startCommand: uvicorn task3_meeting_scope.app:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /health
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.11
       - key: KB_URL
         sync: false
       - key: FRONTEND_URL
