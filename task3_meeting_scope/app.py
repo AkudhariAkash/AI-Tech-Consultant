@@ -6,7 +6,8 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 KB=os.getenv("KB_URL","http://localhost:8000"); app=FastAPI(title="Meeting to Scope",version="1.0.0")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:8081","http://127.0.0.1:8081"], allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
+ALLOWED_ORIGINS=[x.strip() for x in os.getenv("FRONTEND_URL","http://localhost:8081,http://127.0.0.1:8081").split(",") if x.strip()]
+app.add_middleware(CORSMiddleware, allow_origins=ALLOWED_ORIGINS, allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
 class BuildRequest(BaseModel): transcript:str=Field(min_length=20); previous_scope:dict[str,Any]|None=None
 class Approval(BaseModel): approved:bool; reviewer:str="human"
 def lines(text): return [x.strip(" -*\t") for x in text.splitlines() if x.strip()]

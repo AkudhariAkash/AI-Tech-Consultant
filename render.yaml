@@ -1,0 +1,50 @@
+services:
+  - type: web
+    name: ai-tech-consultant-knowledge
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn task1_knowledge_brain.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: FRONTEND_URL
+        sync: false
+
+  - type: web
+    name: ai-tech-consultant-scope
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn task3_meeting_scope.app:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: KB_URL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+
+  - type: web
+    name: ai-tech-consultant-inbox
+    runtime: node
+    plan: free
+    buildCommand: cd task2_inbox_agent && npm install
+    startCommand: node task2_inbox_agent/src/server.js
+    healthCheckPath: /health
+    envVars:
+      - key: KB_URL
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+
+  - type: web
+    name: ai-tech-consultant-frontend
+    runtime: static
+    buildCommand: python scripts/build_frontend.py
+    staticPublishPath: ./frontend
+    envVars:
+      - key: KB_API_URL
+        sync: false
+      - key: SCOPE_API_URL
+        sync: false
+      - key: INBOX_API_URL
+        sync: false

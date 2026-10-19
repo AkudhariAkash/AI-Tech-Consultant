@@ -1,4 +1,4 @@
-const API={kb:'http://localhost:8000',scope:'http://localhost:8001',inbox:'http://localhost:3000'};
+const API=Object.assign({kb:'http://localhost:8000',scope:'http://localhost:8001',inbox:'http://localhost:3000'},window.RUNTIME_CONFIG||{});
 const $=id=>document.getElementById(id);
 function toast(message){const el=$('toast');el.textContent=message;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),2800)}
 function showPage(page){document.querySelectorAll('.page').forEach(x=>x.classList.remove('active-page'));document.querySelectorAll('.nav').forEach(x=>x.classList.remove('active'));$(page).classList.add('active-page');document.querySelector(`[data-page="${page}"]`).classList.add('active');const titles={overview:'Good morning, Alex',knowledge:'Knowledge Brain',inbox:'Inbox Agent',scope:'Meeting to Scope'};$('page-title').textContent=titles[page]}

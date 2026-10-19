@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.db
+task2_inbox_agent/node_modules/
+task2_inbox_agent/dist/
+frontend/config.js

@@ -9,7 +9,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 DB=os.getenv("KB_DB",os.path.join(os.path.dirname(__file__),"knowledge.db")); app=FastAPI(title="Knowledge Brain",version="1.0.0")
-app.add_middleware(CORSMiddleware, allow_origins=["http://localhost:8081","http://127.0.0.1:8081"], allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
+ALLOWED_ORIGINS=[x.strip() for x in os.getenv("FRONTEND_URL","http://localhost:8081,http://127.0.0.1:8081").split(",") if x.strip()]
+app.add_middleware(CORSMiddleware, allow_origins=ALLOWED_ORIGINS, allow_credentials=False, allow_methods=["*"], allow_headers=["*"])
 def conn():
     c=sqlite3.connect(DB); c.row_factory=sqlite3.Row
     c.execute("CREATE TABLE IF NOT EXISTS articles(url TEXT PRIMARY KEY,title TEXT,text TEXT,updated TEXT,content_hash TEXT,active INTEGER DEFAULT 1,images TEXT DEFAULT '[]')")
