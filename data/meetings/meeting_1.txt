@@ -1,0 +1,4 @@
+Client: We need members imported from CSV and a better search.
+Consultant: Search filters and sort should be configurable. The import must avoid duplicate emails.
+Client: We also want our custom domain connected before launch.
+Decision: deliver import, search configuration, and domain setup. Client supplies DNS access.

@@ -1,0 +1,3 @@
+Client: We changed our mind. Search should also support a custom ranking algorithm and Salesforce sync.
+Consultant: The first three items remain. Custom ranking and Salesforce are new work and need discovery.
+Client: We accept an extra quote for those items.

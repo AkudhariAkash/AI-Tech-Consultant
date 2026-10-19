@@ -1,0 +1,50 @@
+{"id":"01","subject":"Search settings","text":"How do I change the default search sort order?"}
+{"id":"02","subject":"CSV import","text":"Can I import members from a CSV file?"}
+{"id":"03","subject":"Refund","text":"Please cancel my plan and tell me how refunds work."}
+{"id":"04","subject":"Custom domain","text":"How do I connect my domain?"}
+{"id":"05","subject":"Project quote","text":"Can you quote a custom integration?"}
+{"id":"06","subject":"Complaint","text":"Your site is broken and this is urgent."}
+{"id":"07","subject":"Follow-up","text":"Following up on the status of our request."}
+{"id":"08","subject":"Plan","text":"What is included in the plan?"}
+{"id":"09","subject":"Billing","text":"I was charged and need help understanding it."}
+{"id":"10","subject":"Search","text":"Where can I configure search filters?"}
+{"id":"11","subject":"Members","text":"Do duplicate emails get skipped in an import?"}
+{"id":"12","subject":"Domain","text":"How long does DNS verification take?"}
+{"id":"13","subject":"Refund","text":"I want to cancel before my next billing date."}
+{"id":"14","subject":"Quote","text":"I need a quote for a website change."}
+{"id":"15","subject":"Complaint","text":"I am disappointed and need a human."}
+{"id":"16","subject":"Follow-up","text":"Any update on the project?"}
+{"id":"17","subject":"CSV","text":"What column is required for imports?"}
+{"id":"18","subject":"Search","text":"Can I change the labels in search?"}
+{"id":"19","subject":"Billing","text":"Please explain my latest invoice."}
+{"id":"20","subject":"Refund","text":"Can I get a refund?"}
+{"id":"21","subject":"Domain","text":"Where do I add DNS records?"}
+{"id":"22","subject":"Project","text":"We want a custom feature built."}
+{"id":"23","subject":"Search","text":"How do I change search filters?"}
+{"id":"24","subject":"CSV","text":"How do I upload members?"}
+{"id":"25","subject":"Complaint","text":"This has not worked for two days."}
+{"id":"26","subject":"Follow-up","text":"Checking in again on my request."}
+{"id":"27","subject":"Billing","text":"Why was my card charged?"}
+{"id":"28","subject":"Domain","text":"How can I verify my custom domain?"}
+{"id":"29","subject":"Quote","text":"Please estimate this project."}
+{"id":"30","subject":"Refund","text":"How do I cancel?"}
+{"id":"31","subject":"Search","text":"Is default sort configurable?"}
+{"id":"32","subject":"CSV","text":"How do imports handle duplicates?"}
+{"id":"33","subject":"Complaint","text":"I need a manager to call me."}
+{"id":"34","subject":"Follow-up","text":"What is the next step?"}
+{"id":"35","subject":"Billing","text":"I need a billing receipt."}
+{"id":"36","subject":"Domain","text":"My domain is not verifying."}
+{"id":"37","subject":"Project","text":"Can you build an integration?"}
+{"id":"38","subject":"Search","text":"Where are search settings?"}
+{"id":"39","subject":"CSV","text":"Can admins upload a CSV?"}
+{"id":"40","subject":"Complaint","text":"This is unacceptable."}
+{"id":"41","subject":"Follow-up","text":"Following up after our meeting."}
+{"id":"42","subject":"Refund","text":"Can I cancel today?"}
+{"id":"43","subject":"Domain","text":"What DNS records do I add?"}
+{"id":"44","subject":"Quote","text":"Please send pricing for a custom change."}
+{"id":"45","subject":"Billing","text":"I need help with a payment."}
+{"id":"46","subject":"Search","text":"Can search sort be changed?"}
+{"id":"47","subject":"CSV","text":"Where is member import?"}
+{"id":"48","subject":"Complaint","text":"I cannot use the product."}
+{"id":"49","subject":"Follow-up","text":"Any progress?"}
+{"id":"50","subject":"Refund","text":"What is the cancellation policy?"}

@@ -1,0 +1,3 @@
+Client: We run a directory and need a refund workflow, member import, and an admin dashboard.
+Consultant: The product has existing billing and import settings; the dashboard needs clarification.
+Client: We need a weekly export and role-based access for the dashboard.
